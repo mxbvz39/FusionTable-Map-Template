@@ -164,12 +164,8 @@
         self.whereClause = self.locationColumn + " not equal to ''";
         
         //-----custom filters-----
-        var type_column = "'Process Type'";
-if ( $("#cbType1").is(':checked')) self.whereClause += " AND " + type_column + "='RDF'";
-if ( $("#cbType2").is(':checked')) self.whereClause += " AND " + type_column + "='burn'";
-if ( $("#cbType3").is(':checked')) self.whereClause += " AND " + type_column + "=3";
-if ( $("#cbType4").is(':checked')) self.whereClause += " AND " + type_column + "=3";
-if ( $("#cbType5").is(':checked')) self.whereClause += " AND " + type_column + "=3";
+        if ( $("#select_type").val() != "")
+      self.whereClause += " AND 'Process Type' = '" + $("#select_type").val() + "'";
         //-----end of custom filters-----
 
         self.getgeoCondition(address, function (geoCondition) {
