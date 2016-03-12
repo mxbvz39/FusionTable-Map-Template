@@ -340,7 +340,7 @@ if (text_search != '')
         results.append(template);
       }
     }
-    results.append("<li><span class='lead'>poopoo</span></li>");
+    results.append("<li>poopoo</li>");
     results.fadeIn();
   },
 
