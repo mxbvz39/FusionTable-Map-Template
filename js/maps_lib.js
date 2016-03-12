@@ -306,7 +306,7 @@ if (text_search != '')
     
     MapsLib.prototype.getList = function(whereClause) {
     var self = this;
-    var selectColumns = ''Name of Facility', 'Location', 'Process Type', 'Generating Capacity, if applicable' ';
+    var selectColumns = 'Active?';
 
     self.query({ 
       select: selectColumns, 
@@ -335,12 +335,7 @@ if (text_search != '')
           <div class='row-fluid item-list'>\
             <div class='span12'>\
               <strong>" + data[row][0] + "</strong>\
-              <br />\
-              " + data[row][1] + "\
-              <br />\
-              " + data[row][2] + "\
-              <br />\
-              " + data[row][3] + "\
+             
             </div>\
           </div>";
         results.append(template);
