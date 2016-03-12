@@ -335,7 +335,6 @@ if (text_search != '')
           <div class='row-fluid item-list'>\
             <div class='span12'>\
               <strong>" + data[row][0] + "</strong>\
-             
             </div>\
           </div>";
         results.append(template);
