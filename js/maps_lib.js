@@ -164,7 +164,7 @@
         self.whereClause = self.locationColumn + " not equal to ''";
         
         //-----custom filters-----
-        var type_column = "'Process Type'";
+        var type_column = "'Process Typee'";
 var tempWhereClause = [];
 if ( $("#cbType1").is(':checked')) tempWhereClause.push("RDF");
 if ( $("#cbType2").is(':checked')) tempWhereClause.push("burn");
