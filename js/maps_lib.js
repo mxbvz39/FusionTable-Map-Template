@@ -346,7 +346,6 @@ if (text_search != '')
         results.append(template);
       }
     }
-    results.append("<li>poopoo</li>");
     results.fadeIn();
   },
 
