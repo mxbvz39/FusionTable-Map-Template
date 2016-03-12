@@ -163,6 +163,13 @@
         self.whereClause = self.locationColumn + " not equal to ''";
         
         //-----custom filters-----
+        var type_column = "'type'";
+var tempWhereClause = [];
+if ( $("#cbType1").is(':checked')) tempWhereClause.push("RDF");
+if ( $("#cbType2").is(':checked')) tempWhereClause.push("burn");
+if ( $("#cbType3").is(':checked')) tempWhereClause.push("digestion");
+if ( $("#cbType4").is(':checked')) tempWhereClause.push("gasification");
+self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
         //-----end of custom filters-----
 
         self.getgeoCondition(address, function (geoCondition) {
