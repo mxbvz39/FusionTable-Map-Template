@@ -164,8 +164,9 @@
         self.whereClause = self.locationColumn + " not equal to ''";
         
         //-----custom filters-----
-        if ( $("#select_type").val() != "")
-      self.whereClause += " AND 'Process Type' = '" + $("#select_type").val() + "'";
+       var text_search = $("#text_search").val().replace("'", "\\'");
+if (text_search != '')
+  self.whereClause += " AND 'Process Type' contains ignoring case '" + text_search + "'";
         //-----end of custom filters-----
 
         self.getgeoCondition(address, function (geoCondition) {
