@@ -165,7 +165,7 @@
         
         //-----custom filters-----
         var type_column = "'Process Type'";
-if ( $("#cbType1").is(':checked')) self.whereClause += " AND " + type_column + "=1";
+if ( $("#cbType1").is(':checked')) self.whereClause += " AND " + type_column + "='RDF'";
 if ( $("#cbType2").is(':checked')) self.whereClause += " AND " + type_column + "=2";
 if ( $("#cbType3").is(':checked')) self.whereClause += " AND " + type_column + "=3";
 if ( $("#cbType4").is(':checked')) self.whereClause += " AND " + type_column + "=3";
