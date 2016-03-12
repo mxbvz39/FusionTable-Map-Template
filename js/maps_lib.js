@@ -71,6 +71,32 @@
         $("#result_box").hide();
 
         //-----custom initializers-----
+        <h4>
+  Recycling services
+</h4>
+<ul class='inputs-list unstyled'>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType1' />
+      <span class='filter-box filter-blue'></span>
+      City drop-off location
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType2' />
+      <span class='filter-box filter-green'></span>
+      Private business
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType3' />
+      <span class='filter-box filter-red'></span>
+      Hazardous materials
+    </label>
+  </li>
+</ul>
         //-----end of custom initializers-----
 
         //run the default search when page loads
