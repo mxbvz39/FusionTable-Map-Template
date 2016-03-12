@@ -167,10 +167,6 @@
         var type_column = "'Process Typee'";
 var tempWhereClause = [];
 if ( $("#cbType1").is(':checked')) tempWhereClause.push("RDF");
-if ( $("#cbType2").is(':checked')) tempWhereClause.push("burn");
-if ( $("#cbType3").is(':checked')) tempWhereClause.push("biomass");
-if ( $("#cbType4").is(':checked')) tempWhereClause.push("ethanol");
-if ( $("#cbType5").is(':checked')) tempWhereClause.push("gasification");
 self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
         //-----end of custom filters-----
 
